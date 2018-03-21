@@ -1,9 +1,9 @@
 void setup() {
-  // put your setup code here, to run once:
-
+  Serial.begin(115200);
+  for (int i = 0; i < 256; i++) {
+    EEPROM.write(i,i);
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
 }
